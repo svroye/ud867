@@ -74,3 +74,10 @@ task lists {
         candies_caps.each{println "$it"}
     }
 }
+
+task foobar {
+    doLast {
+        def foo = "bar"
+        println "$foo + foo = ${foo + "foo"}"
+    }
+}
