@@ -1,0 +1,9 @@
+project.task("Task1")
+
+
+task testParameter {
+    def greeting = "hello"
+    doLast {
+        println x + y
+    }
+}
