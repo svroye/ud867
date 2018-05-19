@@ -25,6 +25,21 @@ https://docs.gradle.org/current/dsl/org.gradle.api.artifacts.Configuration.html
 
 apply plugin: 'java'
 
+configurations {
+    deps
+    compile.extendsFrom deps
+}
+
 repositories {
     mavenCentral()
+}
+
+dependencies {
+    deps 'com.google.guava:guava:25.0-jre'
+}
+
+task zipDeps(type: Zip) {
+    baseName "dependencyArchive"
+    classifier "deps"
+    from configurations.deps 
 }
