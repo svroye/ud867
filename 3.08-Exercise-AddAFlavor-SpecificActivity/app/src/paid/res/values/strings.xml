@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="flavor_name">This is the **paid** version</string>
+    <string name="joke_text">This is the joke !!!</string>
+</resources>
